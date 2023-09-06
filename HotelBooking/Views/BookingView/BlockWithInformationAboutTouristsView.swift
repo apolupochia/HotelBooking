@@ -17,9 +17,9 @@ struct BlockWithInformationAboutTouristsView: View {
     var body: some View {
         if (coordinator.bookingModel != nil){
                 VStack(alignment: .leading){
-     
+                    titleView()
                     if (coordinator.bookingInfoPersons[id].infoPersonValidate.show){
-                        titleView()
+                        
                         nameCustomTextFieldView()
                         surnameCustomTextFieldView()
 
